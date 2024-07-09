@@ -53,6 +53,8 @@ public class Spawner : MonoBehaviour
         newCube.Initialize(cube.transform.localScale/ _decreaseScale, cube.ChanceSeparate/ _decreaseChance, this);
         newCube.Clicked += OnClicked;
 
+        _cubes.Add(newCube);
+
         return newCube;
     }
 
